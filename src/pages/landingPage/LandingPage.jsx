@@ -82,18 +82,18 @@ const LandingPage = () => {
         buttonAction={() => navigate('/business')}
       />
 
-      {/* Professional English Section */}
-      <section className="section professional-english" id="professional-english" style={{ background: 'linear-gradient(135deg, #b7e0ff, #a3d3ff)' }}>
-        <h2>Our English for Professional Purposes Course</h2>
-        <div className="card-container">
-          <Card title="English for Healthcare" image={healthcareImage} imgalt="Healthcare" target="/healthcare" />
-          <Card title="English for Human Resources" image={humanResourcesImage} imgalt="Human Resources" target="/humanresourses" />
-          <Card title="English for Finance and Accounting" image={financeImage} imgalt="finance" target="/finance" />
-          <Card title="English for IT" image={itProfessionalsImage} imgalt="IT Professionals" target="/it" />
-          <Card title="English for Lawyers" image={lawyersImage} imgalt="Lawyer" target="/lawyers" />
-          <Card title="English for Marketing and Sales" image={salesImage} imgalt="Sales" target="/sales" />
-        </div>
-      </section>
+// Professional English Section
+<section className="section professional-english" id="professional-english" style={{ background: 'linear-gradient(135deg, #b7e0ff, #a3d3ff)' }}>
+  <h2>Our English for Professional Purposes Course</h2>
+  <div className="card-container">
+    <Card className="professional-card" title="English for Healthcare Professionals" image={healthcareImage} imgalt="Healthcare" target="/healthcare" />
+    <Card className="professional-card" title="English for Human Resources" image={humanResourcesImage} imgalt="Human Resources" target="/humanresourses" />
+    <Card className="professional-card" title="English for Finance and Accounting" image={financeImage} imgalt="Finance" target="/finance" />
+    <Card className="professional-card" title="English for IT Professionals" image={itProfessionalsImage} imgalt="IT Professionals" target="/it" />
+    <Card className="professional-card" title="English for Law Professionals" image={lawyersImage} imgalt="Lawyer" target="/lawyers" />
+    <Card className="professional-card" title="English for Marketing and Sales" image={salesImage} imgalt="Sales" target="/sales" />
+  </div>
+</section>
 
       {/* Travel English Section */}
       <SectionTemplate

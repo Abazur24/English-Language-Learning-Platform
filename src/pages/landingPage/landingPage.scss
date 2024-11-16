@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth;
 }
 body, html {
   margin: 0;
@@ -12,80 +12,87 @@ body, html {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden; /* Prevents horizontal overflow */
-  overflow-y: hidden; /* Prevents vertical overflow */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-/* Main container for the landing page */
 .landing-page {
-  scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
-  overflow-y: auto; /* Enables vertical scrolling */
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
   scrollbar-width: 0;
-  height: 100vh; /* the container takes up the full viewport height */
-  width: 100%; /* Full width of viewport */
+  height: 100vh;
+  width: 100%;
   flex: 1;
   position: relative;
+
   .section {
-    height: 100vh; /* viewport height for each section */
-    width: 100%; /* Full viewport width */
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    scroll-snap-align: start; /* Scroll snapping alignment */
+    scroll-snap-align: start;
     transition: background-color 0.5s ease;
+
     &:nth-child(odd) {
-      background-color: #EDF2F7;
+      background-color: #edf2f7;
     }
+
     h1, h2 {
       font-size: 2.5rem;
-      color: #2D3748;
+      color: #2d3748;
       margin-bottom: 1rem;
       text-align: center;
     }
+
     p {
       font-size: 1.25rem;
-      color: #4A5568;
+      color: #4a5568;
       margin-bottom: 2rem;
       text-align: center;
       max-width: 100%;
       line-height: 1.6;
     }
+
     .styled-button {
       padding: 0.75rem 1.5rem;
       font-size: 1.25rem;
-      color: #FFFFFF;
-      background-color: #48BB78;
+      color: #ffffff;
+      background-color: #48bb78;
       border: none;
       border-radius: 0.5rem;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
+
       &:hover {
-        background-color: #38A169;
+        background-color: #38a169;
         transform: scale(1.05);
       }
     }
 
-    .card-button{
-      color: #FFFFFF;
-      background-color: #48BB78;
+    .card-button {
+      color: #ffffff;
+      background-color: #48bb78;
       text-decoration: none;
-      width:22rem;
+      width: 22rem;
       border-radius: 0.5rem;
       margin-top: 2rem;
-      padding: 10px 20px ;
+      padding: 10px 20px;
       font-size: 1.25rem;
+
       &:hover {
-        background-color: #38A169;
+        background-color: #38a169;
       }
     }
+
     .course-img {
       margin-top: 0.5rem;
       height: 10rem;
-      // object-fit: cover; 
       border-radius: 0.5rem;
     }
   }
+
   /* Welcome Section Styling */
   .welcome {
     background-image: url('../../assets/images/hero-section.jpeg');
@@ -99,44 +106,49 @@ body, html {
     align-items: center;
     position: relative;
     color: white;
+
     h1 {
       font-size: 5rem;
       z-index: 1;
       text-align: center;
-      margin-bottom: rem;
+      margin-bottom: 1rem;
       max-width: 90%;
       line-height: 1.2;
-      color: #E6EAF2;
+      color: #e6eaf2;
     }
-    /* Transparent card overlay */
+
     .hero-card {
-      background: rgba(255, 255, 255, 0.2); 
+      background: rgba(255, 255, 255, 0.2);
       padding: 2rem;
       border-radius: 0.5rem;
-      width: 80%; 
+      width: 80%;
       max-width: 1200px;
       text-align: center;
       z-index: 1;
+
       p {
-        color: #E6EAF2; /* Dark text for readability */
+        color: #e6eaf2;
         font-size: 2rem;
         margin-bottom: 1.5rem;
       }
+
       .scroll-button {
         padding: 0.75rem 1.5rem;
         font-size: 1.25rem;
-        color: #FFFFFF;
-        background-color: #48BB78;
+        color: #ffffff;
+        background-color: #48bb78;
         border: none;
         border-radius: 0.5rem;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
+
         &:hover {
-          background-color: #38A169;
+          background-color: #38a169;
           transform: scale(1.05);
         }
       }
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -144,14 +156,12 @@ body, html {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(49, 49, 49, 0.5); /* Dark overlay to improve text contrast */
+      background-color: rgba(49, 49, 49, 0.5);
       z-index: 0;
     }
   }
-  /* ---------------- gifty start --------------- */
 
-  /* ---------------- gifty ends ---------------- */
-  
+  /* Professional English Section Styling */
   .card-container {
     display: flex;
     justify-content: center;
@@ -159,95 +169,121 @@ body, html {
     gap: 2rem;
     margin-top: 0.5rem;
     margin-bottom: -3rem;
-    width: 100%; /* the container stays within viewport */
+    width: 100%;
     background-color: #b7e0ff;
   }
 
   .card {
     background-color: #ffffffb3;
-    border: 1px solid #E2E8F0;
+    border: 1px solid #e2e8f0;
     border-radius: 0.75rem;
-    padding: 1rem; //****
+    padding: 1rem;
     width: 35rem;
-    height:20rem;
+    height: 20rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
     h3 {
       font-size: 1.3rem;
-      color: #2D3748;
+      color: #2d3748;
       margin-bottom: 1rem;
     }
+
     button {
-      background-color: #48BB78;
+      background-color: #48bb78;
       color: #fff;
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 0.25rem;
       cursor: pointer;
       margin-top: auto;
+
       &:hover {
-        background-color: #38A169;
+        background-color: #38a169;
       }
     }
+
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
   }
+
   /* Responsive Design for smaller devices */
-  @media (max-width: 768px) {
-    .section {
-      height: 100vh; 
-      padding: 1rem; 
-    }
-    
-    .card-container {
-      display: grid;
-      grid-template-columns: 1fr; 
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .card {
-      width: 100%;
-      padding: 1rem;
-      margin: 0;
-    }
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .professional-english .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Set up two columns */
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    width: 100%; /* Ensure cards take full width of their grid column */
+    height: auto;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Hide images within cards for smaller screens */
     .course-img {
-      height: 10rem; 
+      display: none;
     }
+
+    /* Adjust button size for smaller screens */
+    .styled-button,
+    .card-button {
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
+      margin-top: 1rem;
+      align-self: bottom;
+      width: auto;
+      
+    }
+  }
+
+  .welcome {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
     .hero-card {
-      width: 90%; /* Card width adjustment for smaller screens */
-    }
-    .welcome {
-      h1 {
-        font-size: 3rem; 
-        margin-bottom: 1rem; 
+      width: 90%;
+
+      p {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
       }
-      .hero-card {
-        p {
-          font-size: 1.7rem; 
-          margin-bottom: 1rem; 
-        }
-        .scroll-button {
-          padding: 1rem 1rem; 
-          font-size: 1.5rem; 
-        }
+
+      .scroll-button {
+        padding: 1rem;
+        font-size: 1.5rem;
       }
     }
   }
-  /* Responsive Design for larger screens */
-  @media (min-width: 769px) {
-    .section {
-      height: 100vh;
-    }
-    .card-container {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
+}
+
+/* Responsive Design for larger screens */
+@media (min-width: 769px) {
+  .section {
+    height: 100vh;
   }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
 }

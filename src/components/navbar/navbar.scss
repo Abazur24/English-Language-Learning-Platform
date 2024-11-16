@@ -151,10 +151,19 @@
   }
 
   .nav-item {
-    margin: 0.5rem 0;
+    margin: 0.6rem 0;
   }
 
   .hamburger {
     display: block;
   }
+
+  .nav-item .dropdown {
+    position: static;
+    display: none;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
 }
+

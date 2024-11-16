@@ -24,13 +24,15 @@ const AiAssistantPage = () => {
     } else if (lowerCaseInput.includes('pronounce') && lowerCaseInput.includes('entrepreneur')) {
       return "The word 'entrepreneur' is pronounced as 'ahn-truh-pruh-NUR' in American English or 'on-truh-pruh-NUR' in British English.";
     } else if ((lowerCaseInput.includes('avoid') || lowerCaseInput.includes('writing')) && lowerCaseInput.includes('mistakes')) {
-      return "Common mistakes include run-on sentences, misplaced commas, and inconsistent tense. Proofreading and practice can help!";
+      return "Common writing mistakes include run-on sentences, misplaced commas, and inconsistent tense. Proofreading and practice can help!";
     } else if (lowerCaseInput.includes('ielts') && lowerCaseInput.includes('speaking')) {
       return "For IELTS speaking, practice common topics, speak clearly, and stay calm. Consistency is key to building confidence.";
     } else if (lowerCaseInput.includes('small talk') && (lowerCaseInput.includes('professional') || lowerCaseInput.includes('business'))) {
       return "In professional settings, small talk topics include the weather, current events, and weekend plans. Keep it light!";
     } else if (lowerCaseInput.includes('break') && lowerCaseInput.includes('ice')) {
       return "To 'break the ice' means to start a conversation to make everyone feel more relaxed.";
+    } else if (lowerCaseInput.includes('how') && lowerCaseInput.includes('test my english')) {
+      return 'You can test your English by clicking the "Test your English" button at the top of the page!';
     } else if (lowerCaseInput.includes('what') && lowerCaseInput.includes('can') && lowerCaseInput.includes('do')) {
       return 'I can help you with English language practice, grammar, and vocabulary building!';
     } else if (lowerCaseInput.includes('pronunciation')) {
